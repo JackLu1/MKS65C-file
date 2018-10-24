@@ -20,7 +20,6 @@ int main(){
     char * content = malloc( strlen(m) * sizeof(char));
     int end = read(test, content, 5);
     printf("read = %d\n", end);
-    content[end] = '\0';
     printf("content: %s\n", content);
 
     printf("error %d\n", errno);
